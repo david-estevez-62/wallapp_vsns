@@ -1,0 +1,13 @@
+
+
+div#loginBlock.hide
+div#overlay.hide
+script(type="text/template" id="loginModel")
+    div
+      span.active login
+      span signup
+    div
+      form#loginForm(method="POST" autocomplete="off" required="on")
+        input(type="email", name="username", placeholder="username")
+        input(type="password", name="password", placeholder="password")
+        input(type="submit", value="submit")

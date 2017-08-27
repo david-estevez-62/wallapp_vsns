@@ -1,0 +1,17 @@
+
+
+div#header
+  if(user)
+    a(href="/wall")
+      span#title canvas
+    a#authLink(href="#!")= user.username 
+  else
+    a(href="/wall")
+      span#title canvas
+    a#authLink(href="#!") Login/Signup
+div#nav
+  if(user)
+    span.active wall
+    span edit wall
+  else
+    span.active wall

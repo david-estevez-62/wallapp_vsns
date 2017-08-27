@@ -1,0 +1,20 @@
+
+
+<script type="text/x-jquery-tmpl" id="test">
+	{{#if username}}
+		<a href="/wall">
+			<span id="title">canvas</span>
+		</a>
+		<a href="#!" id="authLink" onclick="processAuthLink()">
+		{{ username }}
+		</a>
+	{{else}}
+		<a href="/wall">
+			<span id="title">canvas</span>
+		</a>
+		<a href="#!" id="authLink" onclick="processAuthLink()">
+		Login/Signup
+		</a>
+	{{/if}}
+</script>
+

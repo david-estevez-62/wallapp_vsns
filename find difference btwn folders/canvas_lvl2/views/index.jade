@@ -1,0 +1,25 @@
+
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title canvas
+    link(rel="stylesheet", type="text/css", href="/main.css")
+
+
+  body
+    include partials/heading.jade
+    include partials/authform.jade
+    div#backSetting
+      //- img(src="/img/uploads/1.png")
+    if(user)
+      include partials/toolbar.jade
+    
+
+        
+
+
+    
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="/client.js")

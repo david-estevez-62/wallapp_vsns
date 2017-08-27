@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title canvas
+    link(rel="stylesheet", type="text/css", href="/main.css")
+
+
+  body
+    div#header
+
+        
+
+
+    block content
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js")
+    script.
+       var user = !{JSON.stringify(user)};
+    script(src="/client.js")

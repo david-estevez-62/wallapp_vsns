@@ -1,0 +1,120 @@
+
+html, body { 
+  margin: 0; 
+  background: #f1f1f1;
+  width:100%;
+  height:100%;
+}
+
+
+#header {
+  padding: 30px;
+  background: grey;
+}
+
+#header span {
+  color: white;
+  font-size: 28px;
+}
+
+#header a:nth-child(2) {
+  float: right;
+}
+
+
+#map {
+  margin-top: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 0px 1px 6px #a8a8a8;
+  background: white;
+}
+
+
+#overlay{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  background: black;
+  overlay:2;
+  opacity: 0.9;
+}
+
+#loginForm {
+  position: absolute;
+  top: 70px;
+  right:0px;
+  width:240px;
+  height:120px;
+  background: beige;
+  z-index: 3;
+}
+
+#loginForm input {
+  height: 15px;
+  margin: 10px; 
+}
+
+#nav {
+  position: fixed;
+  margin: 20px;
+  padding: 10px;
+  width: 160px;
+  height:20px;
+  background: grey;
+}
+
+#nav span {
+  display: inline-block;
+  font-size: 20px;
+  width:30px;
+  margin-top: -15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#nav .active {
+  border: 2px dashed black;
+}
+
+
+#toolBar {
+  height:250px;
+  width:100px;
+  position: absolute;
+  top:150px;
+  background: grey;
+}
+
+#toolBar input {
+  display: block;
+  margin: 10px;
+}
+
+#toolBar.hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width:1100px) {
+  #toolBar input {
+    display: inline-block;
+  }
+
+  #toolBar {
+    padding: 10px;
+    position: absolute;
+    left:180px;
+    top:112px;
+    width: 140px;
+    height:20px;
+  }
+}
+
+
+
